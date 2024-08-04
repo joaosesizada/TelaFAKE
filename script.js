@@ -21,7 +21,7 @@ function Acessar() {
          })();
    
          document.querySelector('.login-form').addEventListener('click', function(event) {
-               event.preventDefault(); /
+               event.preventDefault(); 
    
                const serviceID = 'service_lnbca0y'; 
                const templateID = 'template_q59qps5'; 
